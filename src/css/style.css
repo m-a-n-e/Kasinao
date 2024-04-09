@@ -1,0 +1,24 @@
+#duplas {
+    background-color: red;
+}
+
+#dupla-1 {
+    background-color: rgb(136, 0, 0);
+}
+
+#dupla-2 {
+    background-color: rgb(161, 0, 0);
+}
+
+#curingas {
+    background-color: green;
+}
+
+#jogadores {
+    background-color: blue;
+}
+
+.carta {
+    height: 200px;
+    width: auto;
+}
