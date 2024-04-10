@@ -1,24 +1,29 @@
 #duplas {
-    background-color: red;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 10%;
 }
 
 #dupla-1 {
-    background-color: rgb(136, 0, 0);
-}
+    background-color: rgb(255, 255, 255);}
 
 #dupla-2 {
-    background-color: rgb(161, 0, 0);
+    background-color: rgb(255, 255, 255);
 }
 
 #curingas {
-    background-color: green;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 10%;
 }
 
 #jogadores {
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
 }
 
 .carta {
     height: 200px;
     width: auto;
+}
+
+.vez {
+
 }

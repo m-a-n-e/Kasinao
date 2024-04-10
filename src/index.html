@@ -23,24 +23,30 @@
                     <div class="col">
                         <div id="dupla-1" class="dupla">
                             <h2>Dupla 1</h2>
-                            <input type="text" id="nome-dupla-1" placeholder="Nome da Dupla 1">
+                            <div id="nomes-dupla-1" class="input-group mb-3">   
+                                <input id="j1d1" type="text" class="form-control" placeholder="Jogador 1" aria-label="Username">
+                                <input id="j2d1" type="text" class="form-control" placeholder="Jogador 2" aria-label="Username">
+                            </div>
+                            
                             <p>Pontos: <span id="pontos-dupla-1">0</span></p>
                             <section id="botoes-pontos">
-                                <button id="botao-adicionar-ponto">+1</button>
-                                <button id="botao-adicionar-truco">+3 (Truco)</button>
-                                <button id="botao-remover-ponto">-1</button>
+                                <button type="button" id="botao-adicionar-ponto" class="btn btn-dark">+1</button>
+                                <button type="button" id="botao-adicionar-truco" class="btn btn-dark">+3</button>
+                                <button type="button" id="botao-remover-ponto" class="btn btn-dark">-1</button>
                             </section>
                         </div>
                     </div>
                     <div class="col">
                         <div id="dupla-2" class="dupla">
                             <h2>Dupla 2</h2>
-                            <input type="text" id="nome-dupla-2" placeholder="Nome da Dupla 2">
-                            <p>Pontos: <span id="pontos-dupla-2">0</span></p>
+                            <div id="nomes-dupla-2" class="input-group mb-3">   
+                                <input id="j1d2" type="text" class="form-control" placeholder="Jogador 1" aria-label="Username">
+                                <input id="j2d2" type="text" class="form-control" placeholder="Jogador 2" aria-label="Username">
+                            </div>                            <p>Pontos: <span id="pontos-dupla-2">0</span></p>
                             <section id="botoes-pontos">
-                                <button id="botao-adicionar-ponto">+1</button>
-                                <button id="botao-adicionar-truco">+3 (Truco)</button>
-                                <button id="botao-remover-ponto">-1</button>
+                                <button type="button" id="botao-adicionar-ponto" class="btn btn-dark">+1</button>
+                                <button type="button" id="botao-adicionar-truco" class="btn btn-dark">+3</button>
+                                <button type="button" id="botao-remover-ponto" class="btn btn-dark">-1</button>
                             </section>
                         </div>
                     </div>
@@ -71,31 +77,18 @@
         </section>
 
         <section id="jogadores" class="container text-center">
-            <div class="row">
-                <div class="col">
-                    <div class="jogador">
-                        <h2>J1</h2>
-                        <input type="checkbox" id="vez-jogador-1">
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="jogador">
-                        <h2>J2</h2>
-                        <input type="checkbox" id="vez-jogador-2">
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="jogador">
-                        <h2>J3</h2>
-                        <input type="checkbox" id="vez-jogador-3">
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="jogador">
-                        <h2>J4</h2>
-                        <input type="checkbox" id="vez-jogador-4">
-                    </div>
-                </div>
+            <div class="btn-group btn-group-lg d-flex" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn btn-dark vez w-100" for="btnradio1">J1</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn btn-dark vez w-100" for="btnradio2">J2</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                <label class="btn btn-dark vez w-100" for="btnradio3">J3</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                <label class="btn btn-dark vez w-100" for="btnradio4">J4</label>
             </div>
         </section>
 
