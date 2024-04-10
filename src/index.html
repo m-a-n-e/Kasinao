@@ -13,7 +13,7 @@
 
 <body>
     <header class="container text-center sticky-top">
-        <h1>Kasinão</h1>
+        <img id="logo" src="./img/kasinao.png" alt="">
     </header>
     <main>
         <section id="duplas" class="container text-center">
@@ -22,32 +22,49 @@
                 <div class="row">
                     <div class="col">
                         <div id="dupla-1" class="dupla">
-                            <h2>Dupla 1</h2>
-                            <div id="nomes-dupla-1" class="input-group mb-3">   
-                                <input id="j1d1" type="text" class="form-control" placeholder="Jogador 1" aria-label="Username">
-                                <input id="j2d1" type="text" class="form-control" placeholder="Jogador 2" aria-label="Username">
-                            </div>
-                            
-                            <p>Pontos: <span id="pontos-dupla-1">0</span></p>
-                            <section id="botoes-pontos">
-                                <button type="button" id="botao-adicionar-ponto" class="btn btn-dark">+1</button>
-                                <button type="button" id="botao-adicionar-truco" class="btn btn-dark">+3</button>
-                                <button type="button" id="botao-remover-ponto" class="btn btn-dark">-1</button>
+                            <h2 class="texto-1">Dupla 1</h2>
+                            <section id="nomes-dupla-1">
+                                <div class="input-group mb-3 ">
+                                    <input id="j1d1" type="text" class="form-control nomes" placeholder="Jogador 1"
+                                        aria-label="Username">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input id="j2d1" type="text" class="form-control nomes" placeholder="Jogador 2"
+                                        aria-label="Username">
+                                </div>
                             </section>
+
+                            <p class="texto-1">Pontos: <span id="pontos-dupla-1">0</span></p>
+
+                            <section class="btn-group mr-2 botoes-pontos" role="group" aria-label="Second group">
+                                <button type="button" class="btn btn-dark" onclick="changeColor(this)">1</button>
+                                <button type="button" class="btn btn-dark" onclick="changeColor(this)">+3</button>
+                                <button type="button" class="btn btn-dark" onclick="changeColor(this)">-1</button>
+                            </section>
+
                         </div>
                     </div>
                     <div class="col">
                         <div id="dupla-2" class="dupla">
-                            <h2>Dupla 2</h2>
-                            <div id="nomes-dupla-2" class="input-group mb-3">   
-                                <input id="j1d2" type="text" class="form-control" placeholder="Jogador 1" aria-label="Username">
-                                <input id="j2d2" type="text" class="form-control" placeholder="Jogador 2" aria-label="Username">
-                            </div>                            <p>Pontos: <span id="pontos-dupla-2">0</span></p>
-                            <section id="botoes-pontos">
-                                <button type="button" id="botao-adicionar-ponto" class="btn btn-dark">+1</button>
-                                <button type="button" id="botao-adicionar-truco" class="btn btn-dark">+3</button>
-                                <button type="button" id="botao-remover-ponto" class="btn btn-dark">-1</button>
+                            <h2 class="texto-1">Dupla 2</h2>
+                            <section id="nomes-dupla-2">
+                                <div class="input-group mb-3">
+                                    <input id="j1d2" type="text" class="form-control nomes" placeholder="Jogador 1"
+                                        aria-label="Username">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <input id="j2d2" type="text" class="form-control nomes" placeholder="Jogador 2"
+                                        aria-label="Username">
+                                </div>
                             </section>
+                            <p class="texto-1">Pontos: <span id="pontos-dupla-2">0</span></p>
+
+                            <section class="btn-group mr-2 botoes-pontos" role="group" aria-label="Second group">
+                                <button type="button" class="btn btn-dark" onclick="changeColor(this)">1</button>
+                                <button type="button" class="btn btn-dark" onclick="changeColor(this)">+3</button>
+                                <button type="button" class="btn btn-dark" onclick="changeColor(this)">-1</button>
+                            </section>
+
                         </div>
                     </div>
                 </div>
@@ -55,10 +72,11 @@
         </section>
 
         <section id="curingas" class="container text-center ">
+            <h1 class="texto-1">Curinga</h1>
             <div class="row">
                 <div class="col">
                     <div class="curingas">
-                        <h2>Curinga Anterior</h2>
+                        <h5 class="texto-1">Anterior</h5>
                         <img class="carta"
                             src="https://escolaeducacao.com.br/wp-content/uploads/2023/05/voce-conhece-todas-as-cartas-de-baralho-esse-truque-pode-revelar-que-nao.jpg"
                             alt="Curinga Anterior">
@@ -66,7 +84,7 @@
                 </div>
                 <div class="col">
                     <div class="curingas">
-                        <h2>Curinga Atual</h2>
+                        <h5 class="texto-1">Atual</h5>
                         <img class="carta"
                             src="https://escolaeducacao.com.br/wp-content/uploads/2023/05/voce-conhece-todas-as-cartas-de-baralho-esse-truque-pode-revelar-que-nao.jpg"
                             alt="Curinga Atual">
@@ -91,7 +109,6 @@
                 <label class="btn btn-dark w-100" for="btnradio4">J4</label>
             </div>
         </section>
-
 
     </main>
 
